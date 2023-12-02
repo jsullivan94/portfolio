@@ -6,8 +6,100 @@ body {
   margin: 0;
   padding: 0;
 }
-.sidebar {
-  height: 100%;
-  width: 200px;
-  background-color: blueviolet;
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
 }
+
+.nav-bars {
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 40px;
+}
+
+.nav-x {
+  margin-top: 25px;
+  margin-bottom: 200px;
+  margin-left: 150px;
+  list-style: none;
+  background: none;
+  font-size: 30px;
+  color: white;
+}
+
+.nav-x:hover {
+  color: rgb(80, 77, 168);
+}
+
+.nav-closed {
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left:-100%;
+  transition: 850ms;
+}
+
+.nav-open {
+  background-color: rgb(14, 5, 70);
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left:0;
+  transition: 850ms;
+}
+
+.nav-icons {
+  margin-top: 400px;
+  font-size: 55px;
+  list-style: none;
+  margin-left: 30px;
+}
+
+.nav-icon {
+  padding-left: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.nav-icon:hover {
+  color: rgb(80, 77, 168);
+}
+
+.nav-item {
+  margin-top: 20px;
+  align-items: center;
+  list-style: none;
+  height: 60px;
+  padding-left: 13px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  padding-left: 25px;
+}
+
+.nav-item a:hover {
+  background-color: rgb(31, 28, 96);
+
+}
+
+.nav-items {
+  width: 100%;
+}
+
+span {
+  margin-left: 16px;
+}
+

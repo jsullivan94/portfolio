@@ -1,17 +1,30 @@
-import 'dotenv/config'
-import express, { json } from 'express'
-import cors from 'cors'
-import { connect } from 'mongoose'
-// import Project from '../models/projectModel.js';
+require('dotenv').config()
+const express = require('express')
+const cors = require('cors')
+const mongoose = require('mongoose')
+const Project = require('./models/projectModel')
+const errorMiddleware = require('./middleware/errorMiddleware')
 
 const app = express()
 
 app.use(cors())
-app.use(json())
+app.use(express.json())
+app.use(errorMiddleware)
 
 const MONGO_URL=process.env.MONGO_URL
 const PORT=process.env.PORT
 
+
+
+
+
+
+
+
+
+
+
+mongoose.
 connect(MONGO_URL)
 .then(() => {
     console.log('Connected to mongo db')

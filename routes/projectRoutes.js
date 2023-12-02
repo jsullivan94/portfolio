@@ -1,3 +1,5 @@
-import { Router } from 'express';
+const express = require('express')
+const Project = require('../models/projectModel')
 
-const route = Router();
+const router = express.Router()
+
