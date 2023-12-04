@@ -1,8 +1,15 @@
+import Bio from "../components/Bio";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
+import Nav from "../components/Nav";
 
 function Home() {
     return (
         <div>
-            <h1>James Sullivan</h1>
+            <Nav />
+            <Bio />
+            <Projects />  
+            <Contact />
         </div>
     )
 }

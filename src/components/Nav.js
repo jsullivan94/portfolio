@@ -1,6 +1,6 @@
 import navData from "./NavData";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 import { FaGithubSquare, FaLinkedin, FaBars, FaArrowLeft } from "react-icons/fa";
 
 function Nav() {
@@ -13,10 +13,10 @@ function Nav() {
     const links = navData.map((item) => {
         return (
             <li className={item.cName}>
-                <Link to={item.path} >
+                <NavHashLink to={item.path} smooth>
                     {item.icon}
                     <span>{item.title}</span>
-                </Link>
+                </NavHashLink>
             </li>
         )
     })

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+
 .App {
   width: 100vw;
   height: 100vh;
@@ -5,7 +7,11 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: rgb(69, 69, 132);
 }
+
+/* navbar */
+
 .navbar {
   height: 80px;
   display: flex;
@@ -13,30 +19,35 @@ body {
 }
 
 .nav-bars {
+  position: fixed;
   margin-top: 15px;
   margin-left: 15px;
   font-size: 40px;
+  color: rgb(23, 12, 91);
+}
+
+.nav-bars:hover {
+  transform: scale(1.1);
+  transition: .1s;
 }
 
 .nav-x {
   margin-top: 25px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
   margin-left: 150px;
-  list-style: none;
-  background: none;
   font-size: 30px;
-  color: white;
+  color: rgb(155, 153, 215);
 }
 
 .nav-x:hover {
-  color: rgb(80, 77, 168);
+  color: rgb(205, 203, 228);
+  transform: scale(1.1);
+  transition: .1s;
 }
 
 .nav-closed {
   width: 200px;
   height: 100vh;
-  display: flex;
-  justify-content: center;
   position: fixed;
   top: 0;
   left:-100%;
@@ -44,44 +55,43 @@ body {
 }
 
 .nav-open {
-  background-color: rgb(14, 5, 70);
+  background-color: rgb(23, 12, 91);
   width: 200px;
   height: 100vh;
-  display: flex;
-  justify-content: center;
   position: fixed;
   left:0;
-  transition: 850ms;
+  transition: 500ms;
 }
 
 .nav-icons {
-  margin-top: 400px;
+  margin-top: 350px;
   font-size: 55px;
-  list-style: none;
   margin-left: 30px;
 }
 
 .nav-icon {
   padding-left: 10px;
-  color: rgb(255, 255, 255);
+  color: rgb(155, 153, 215);;
 }
 
 .nav-icon:hover {
-  color: rgb(80, 77, 168);
+  color: rgb(205, 203, 228);
+  transform: scale(1.1);
+  transition: .1s;;
 }
 
 .nav-item {
+  list-style-type: none;
   margin-top: 20px;
-  align-items: center;
-  list-style: none;
   height: 60px;
-  padding-left: 13px;
+  padding-left: 12px;
 }
 
 .nav-item a {
+  font-family: 'Rajdhani', sans-serif;
   text-decoration: none;
   color: white;
-  font-size: 25px;
+  font-size: 24px;
   width: 80%;
   height: 100%;
   display: flex;
@@ -92,6 +102,8 @@ body {
 
 .nav-item a:hover {
   background-color: rgb(31, 28, 96);
+  transform: scale(1.1);
+  transition: .1s;
 
 }
 
@@ -102,4 +114,20 @@ body {
 span {
   margin-left: 16px;
 }
+
+
+/* Home */
+
+.my-name { 
+  display: flex;
+  justify-content: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 50px;
+}
+
+#bio {
+  margin-bottom: 5000px ;
+}
+
+
 
